@@ -46,6 +46,9 @@ run mix format --dry-run --check-formatted
 header "API code lint…"
 run mix credo --strict
 
+header "API dialyzer…"
+run mix dialyzer --plt
+
 header "Webapp code auto-formatting…"
 run npm --prefix webapp run prettier-check
 

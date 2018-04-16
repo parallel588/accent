@@ -10,8 +10,9 @@ node_js: 9.5.0
 
 cache:
   directories:
-  - _build
-  - deps
+    - _build
+    - deps
+    - .plts
 
 # Make sure PostgreSQL is running
 addons:
